@@ -1,0 +1,45 @@
+<nav >
+  <img src="https://img.icons8.com/ios/500/tv-show.png"  height="40px">
+  Tv series
+
+</nav>
+
+<div class="container-fluid">
+
+  <div class="col-6" >
+
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th class="h4">#</th>
+          <th class="h4">Name</th>
+          <th class="h4">Channel</th>
+          <th class="h4">Seasons</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let c of series">
+          <td class="table-active">
+            <dd  >{{c.id}}</dd>
+          </td>
+          <td class="table-active">
+            <dd class="text-primary">{{c.name}}</dd>
+          </td>
+          <td class="table-active">
+            <dd>{{c.channel}}</dd>
+          </td>
+          <td class="table-active">
+            <dd>{{c.seasons}}</dd>
+          </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <div>
+      <h6> Seasons average: {{promedio}}</h6>
+    </div>
+
+  </div>
+
+
+</div>
